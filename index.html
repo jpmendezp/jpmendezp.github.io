@@ -36,22 +36,17 @@
     background-position: center top;
     pointer-events: none;
   }
-  .hero-bg::after {
-    content: '';
+  .hero-overlay {
     position: absolute; inset: 0;
     background: linear-gradient(
       to right,
       rgba(13,15,20,0.92) 0%,
-      rgba(13,15,20,0.75) 50%,
-      rgba(13,15,20,0.4) 100%
-    ),
-    linear-gradient(
-      to top,
-      rgba(13,15,20,0.95) 0%,
-      rgba(13,15,20,0.2) 60%,
-      transparent 100%
+      rgba(13,15,20,0.70) 55%,
+      rgba(13,15,20,0.35) 100%
     );
+    z-index: 1;
   }
+  .hero > *:not(.hero-bg):not(.hero-overlay) { position: relative; z-index: 2; }
   .hero-label { font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); margin-bottom: 1.5rem; display: flex; align-items: center; gap: 10px; }
   .hero-label::before { content: ''; display: inline-block; width: 28px; height: 1px; background: var(--accent); }
   .hero h1 { font-family: 'DM Serif Display', serif; font-size: clamp(3rem, 8vw, 6rem); line-height: 1.05; letter-spacing: -0.02em; max-width: 900px; margin-bottom: 2rem; }
@@ -151,6 +146,7 @@
 <!-- HERO -->
 <section class="hero" id="inicio">
   <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
   <div class="hero-label">Mechatronic Engineer · Strategic Management</div>
   <h1>Juan Pablo<br><em>Mendez Paredes</em></h1>
   <p class="hero-desc">Mechatronic Engineer with a specialization in Strategic Business Management. I bridge the gap between engineering precision and business strategy to drive impactful, data-driven decisions.</p>
