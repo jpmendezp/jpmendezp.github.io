@@ -82,6 +82,25 @@
     z-index: 1;
   }
   #about > * { position: relative; z-index: 2; }
+  #experience {
+    position: relative;
+    overflow: hidden;
+  }
+  #experience::before {
+    content: '';
+    position: absolute; inset: 0;
+    background-image: url('Earning_Ears_Jp.jpeg');
+    background-size: cover;
+    background-position: center 30%;
+    z-index: 0;
+  }
+  #experience::after {
+    content: '';
+    position: absolute; inset: 0;
+    background: rgba(13,15,20,0.84);
+    z-index: 1;
+  }
+  #experience > * { position: relative; z-index: 2; }
   .section-label { font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 10px; }
   .section-label::before { content: ''; display: inline-block; width: 20px; height: 1px; background: var(--accent); }
   .section-title { font-family: 'DM Serif Display', serif; font-size: clamp(2rem, 4vw, 3rem); line-height: 1.1; margin-bottom: 3rem; }
