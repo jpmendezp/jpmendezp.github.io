@@ -67,7 +67,8 @@
   .section-label::before { content: ''; display: inline-block; width: 20px; height: 1px; background: var(--accent); }
   .section-title { font-family: 'DM Serif Display', serif; font-size: clamp(2rem, 4vw, 3rem); line-height: 1.1; margin-bottom: 3rem; }
 
-  .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
+  .about-grid { display: grid; grid-template-columns: 1fr 1.2fr 1fr; gap: 3rem; align-items: start; }
+  .about-photo { width: 100%; aspect-ratio: 3/4; object-fit: cover; object-position: center top; border-radius: 4px; filter: grayscale(20%); }
   .about-text { color: var(--muted); line-height: 1.9; }
   .about-text p + p { margin-top: 1rem; }
   .about-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 2rem; }
@@ -191,6 +192,9 @@
           <span class="tag">Innovation</span>
         </div>
       </div>
+    </div>
+    <div style="display:flex; align-items:stretch;">
+      <img src="Delta_Megafono_Jp.jpeg" alt="Juan Pablo Mendez" class="about-photo" />
     </div>
     <div class="about-info">
       <div class="info-row">
