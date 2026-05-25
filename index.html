@@ -337,36 +337,38 @@
       <h2 class="section-title">Let's talk</h2>
       <p>Have a project in mind or want to know more about my work? Write to me — I respond within 24 hours.</p>
       <div class="contact-links">
-        <a href="mailto:tucorreo@ejemplo.com" class="contact-link">
+        <a href="mailto:jmendezp97@gmail.com" class="contact-link">
           <div class="contact-link-icon">✉</div>
           <div class="contact-link-text">
             <span class="contact-link-label">Email</span>
-            <span class="contact-link-val">tucorreo@ejemplo.com</span>
+            <span class="contact-link-val">jmendezp97@gmail.com</span>
           </div>
         </a>
-        <a href="https://linkedin.com/in/tunombre" class="contact-link">
+        <a href="https://www.linkedin.com/in/jp-mendezp" class="contact-link">
           <div class="contact-link-icon">in</div>
           <div class="contact-link-text">
             <span class="contact-link-label">LinkedIn</span>
-            <span class="contact-link-val">/in/jpmendezp</span>
+            <span class="contact-link-val">/in/jp-mendezp</span>
           </div>
         </a>
       </div>
     </div>
     <div class="contact-right reveal">
+      <form action="https://formspree.io/f/xvzybveq" method="POST">
       <div class="form-group">
         <label>Name</label>
-        <input type="text" placeholder="Your full name" />
+        <input type="text" name="name" placeholder="Your full name" required />
       </div>
       <div class="form-group">
         <label>Email</label>
-        <input type="email" placeholder="email@example.com" />
+        <input type="email" name="email" placeholder="email@example.com" required />
       </div>
       <div class="form-group">
         <label>Message</label>
-        <textarea placeholder="Tell me how I can help you..."></textarea>
+        <textarea name="message" placeholder="Tell me how I can help you..."></textarea>
       </div>
-      <button class="form-submit">Send message</button>
+      <button type="submit" class="form-submit">Send message</button>
+      </form>
     </div>
   </div>
 </section>
